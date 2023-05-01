@@ -12,21 +12,8 @@ function Auth() {
         <Home />
       ) : (
         <>
-          {/* ye text nahi dikh raha  */}
-          <h1>Roles </h1>
-          <p
-            style={{
-              position: "absolute",
-              top: "10%",
-              left: "50%",
-              transform: "translateX(-50%)",
-            }}
-          >
-            <ul>Can create Startup project</ul>
-            <ul>Can see and Manage funds</ul>
-          </p>
           <img
-            src="/src/assets/project-manager.png"
+            src="https://i.ibb.co/HYqyDSV/project-manager.png"
             alt="Manager Roles"
             style={{
               width: "100vw",

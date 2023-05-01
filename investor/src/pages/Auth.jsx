@@ -1,7 +1,7 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import LoginButton from "../components/LoginButton";
-import HomeInvestor from "./HomeInvestor";
+import Roles from "./Roles";
 
 function Auth() {
   const { isAuthenticated } = useAuth0();
@@ -9,25 +9,11 @@ function Auth() {
   return (
     <div>
       {isAuthenticated ? (
-        <HomeInvestor />
+        <Roles />
       ) : (
         <>
-          {/* ye text nahi dikh raha  */}
-          <h1>Roles </h1>
-          <p
-            style={{
-              position: "absolute",
-              top: "10%",
-              left: "50%",
-              transform: "translateX(-50%)",
-            }}
-          >
-            <ul>Can see all startups</ul>
-            <ul>Can invest in startups</ul>
-            <ul>Can see plagairism score</ul>
-          </p>
           <img
-            src="/src/assets/investor.png"
+            src="https://i.ibb.co/XJhDZ8j/investor.jpg"
             alt="Investor Roles"
             style={{
               width: "100vw",

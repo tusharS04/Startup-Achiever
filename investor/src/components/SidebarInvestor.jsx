@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 
-import { logo, sun, logout } from "../assets";
+import { logo, sun, logout1 } from "../assets";
 import { navlinks } from "../constants";
 
 const Icon = ({ styles, name, imgUrl, isActive, disabled, handleClick }) => (
   <div
     className={`w-[48px] h-[48px] rounded-[10px] ${
-      isActive && isActive === name && "bg-[#2c2f32]"
+      isActive && isActive === name && "bg-[#b0b0ae]"
     } flex justify-center items-center ${
       !disabled && "cursor-pointer"
     } ${styles}`}
@@ -32,12 +32,18 @@ const SidebarInvestor = () => {
   const { logout } = useAuth0();
 
   return (
-    <div className="flex justify-between items-center flex-col sticky top-5 h-[93vh]">
-      <Link to="/">
-        <Icon styles="w-[52px] h-[52px] bg-[#2c2f32]" imgUrl={logo} />
-      </Link>
-
-      <div className="flex-1 flex flex-col justify-between items-center bg-[#1dc071] rounded-[20px] w-[76px] py-4 mt-12">
+    <div className="flex justify-between items-center flex-col top-5 h-[60vh]">
+      <div style={{ pointerEvents: "none" }}>
+        <img
+          src={logo}
+          alt="Logo"
+          style={{ width: "100px", height: "auto", pointerEvents: "none" }}
+        />
+      </div>
+      <div
+        className="flex-1 flex flex-col justify-between items-center bg-[#ffff] rounded-[20px] w-[76px] py-4 mt-12 sidebar"
+        style={{ marginTop: "50px" }}
+      >
         <div className="flex flex-col justify-center items-center gap-3">
           {navlinks.map((link) => (
             <Icon
@@ -55,10 +61,8 @@ const SidebarInvestor = () => {
         </div>
 
         <Link onClick={() => logout()}>
-          <Icon styles="w-[52px] h-[52px] bg-[#2c2f32]" imgUrl={logout} />
+          <Icon styles="w-[52px] h-[52px] " imgUrl={logout1} />
         </Link>
-
-        {/* <Icon styles="bg-[#1c1c24] shadow-secondary" imgUrl={sun} /> */}
       </div>
     </div>
   );

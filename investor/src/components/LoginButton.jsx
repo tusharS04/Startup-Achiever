@@ -12,13 +12,15 @@ function LoginButton() {
           style={{
             position: "absolute",
             bottom: "200px",
-            right: "200px",
+            right: "650px",
             border: "3px solid black",
-            backgroundColor: " #b3b300",
+            borderRadius: "10px",
+            backgroundColor: " #ded776",
+            padding: "13px",
           }}
           onClick={() => loginWithRedirect({})}
         >
-          Log In
+          <h2 style={{ fontWeight: "bold", fontSize: "1.45rem" }}>LOGIN</h2>
         </button>
       </div>
     </div>

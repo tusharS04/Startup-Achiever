@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <title>Startup Achiever</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="icon" href="logosa.png" type="image/x-icon" />
+  <!-- Custom CSS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+
+  <style>
+    .navbar-brand {
+      /* font-weight: bold; */
+      font-family: "Lobster", cursive;
+      font-size: 2rem;
+    }
+
+    .cnt {
+      margin-left: 50px;
+    }
+
+    .btn-custom {
+      background-color: #007bff;
+      color: #fff;
+      /* border-radius: 0; */
+      border: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      margin-right: 50px;
+      border-radius: 10px;
+      /* margin-left: 200px; */
+    }
+
+    .move {
+      margin-right: 70px;
+    }
+
+    .line {
+      border-bottom: 2.5px solid rgb(146, 40, 218);
+    }
+
+    .rounded-box {
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 5px;
+      width: 600px;
+      /* align: center; */
+      margin: auto;
+      margin-bottom: 20px;
+    }
+
+    .btn-custom:hover,
+    .btn-custom:focus {
+      background-color: #0062cc;
+      color: #fff;
+      outline: none;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .about {
+      padding: 30px;
+      background-color: #9268cc;
+      text-align: center;
+    }
+
+    .abtxt {
+      text-align: center;
+      width: 1300px;
+      margin: auto;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Startup Achiever</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse cnt" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+      </ul>
+      <div class="move">
+        <button class="btn btn-custom" onclick="window.location.href=' https://startup-achiever-client.netlify.app/'">
+          Project Manager
+        </button>
+        <button class="btn btn-custom"
+          onclick="window.location.href='  https://startup-achiever-investor.netlify.app/'">
+          Investor
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- Include Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <div class="line"></div>
+  <div>
+    <img src="front_page.png" alt="Image description" width="100%" height="100%" />
+  </div>
+  <br /><br />
+  <section id="contact">
+    <div class="rounded-box">
+      <h1>Contact Us</h1>
+      <br /><br />
+      <ul>
+        Phone Number: +91 8585858585
+      </ul>
+      <ul>
+        Email:
+        <a href="mailto:tuhsarsomvanshi0406@gmail.com"> startupachieversupport@gmail.com</a>
+      </ul>
+    </div>
+  </section>
+  <section id="about">
+    <div class="about">
+      <h1>About Us</h1>
+      <p class="abtxt">
+        Start-up Achiever is a blockchain-based crowdfunding platform that
+        connects investors directly to start-ups without the use of a
+        middleman. It eliminates centralized authority systems and payment
+        transfer between two parties to make the entire process more
+        decentralized. It enables any start-up to raise money by allowing them
+        to upload their pitches and develop smart contracts that allow
+        contributors to govern the money invested and project creators and
+        investors to efficiently raise and reserve financing. To maintain the
+        uniqueness of the project, it is recommended to test for plagiarism by
+        taking the project description from the project manager or
+        entrepreneur.
+      </p>
+    </div>
+  </section>
+</body>
+
+</html>

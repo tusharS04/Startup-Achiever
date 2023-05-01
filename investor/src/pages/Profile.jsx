@@ -36,6 +36,7 @@ const Profile = () => {
           title="All Campaigns"
           isLoading={isLoading}
           campaigns={campaigns}
+          style={{ color: "black" }}
         />
       </div>
     </div>

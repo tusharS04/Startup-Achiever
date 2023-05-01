@@ -38,12 +38,31 @@ export const StateContextProvider = ({ children }) => {
     return parsedCampaings;
   };
 
+  // const getUserCampaigns = async () => {
+  //   const allCampaigns = await getCampaigns();
+
+  //   const filteredCampaigns = allCampaigns.filter(
+  //     (campaign) => campaign.owner === address
+  //   );
+
+  //   return filteredCampaigns;
+  // };
+
   const getUserCampaigns = async () => {
     const allCampaigns = await getCampaigns();
+    const filteredCampaigns = [];
 
-    const filteredCampaigns = allCampaigns.filter(
-      (campaign) => campaign.owner === address
-    );
+    for (let j = 0; j < 100; j++) {
+      const donations = await contract.call("getDonators", j);
+      const numberOfDonations = donations[0].length;
+
+      for (let i = 0; i < numberOfDonations; i++) {
+        if (donations[0][i] === address) {
+          filteredCampaigns.push(allCampaigns[j]);
+          break;
+        }
+      }
+    }
 
     return filteredCampaigns;
   };

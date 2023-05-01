@@ -1,32 +1,19 @@
-import { dashboard, logout, payment, profile, withdraw } from "../assets";
+import { dashboard, dashboard1, profile } from "../assets";
 
 export const navlinks = [
   {
     name: "dashboard",
     imgUrl: dashboard,
-    link: "/",
+    link: "/roles",
   },
   {
-    name: "payment",
-    imgUrl: payment,
-    link: "/",
-    disabled: true,
-  },
-  {
-    name: "withdraw",
-    imgUrl: withdraw,
-    link: "/",
-    disabled: true,
+    name: "dashboard1",
+    imgUrl: dashboard1,
+    link: "/homeinvestor",
   },
   {
     name: "profile",
     imgUrl: profile,
     link: "/profile",
-  },
-  {
-    name: "logout",
-    imgUrl: logout,
-    link: "/auth",
-    disabled: true,
   },
 ];

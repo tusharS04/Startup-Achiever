@@ -1,99 +1,121 @@
-  @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat&family=Ubuntu:wght@500&display=swap'); */
 
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@font-face {
+  font-family: BrunoAce;
+  src: url("./assets/Fonts/Bruno_Ace_SC/BrunoAceSC-Regular.ttf");
+  font-display: swap;
+}
 
-  .linear-gradient {
-    /* background: linear-gradient(179.14deg,
-        rgba(32, 18, 63, 0) -7.14%,
-        #000000 87.01%); */
-    backgroundColor: white;
-  }
+@font-face {
+  font-family: Montserrat;
+  src: url("./assets/Fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+  font-display: swap;
+}
 
-  .bg {
-    background-color: rgb(255, 255, 255);
+@font-face {
+  font-family: Ubuntu;
+  src: url("./assets/Fonts/Ubuntu/Ubuntu-BoldItalic.ttf");
+  font-display: swap;
+}
 
-  }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  .background {
-    background-color: white;
-  }
+.linear-gradient {
+  /* background: linear-gradient(179.14deg,
+      rgba(32, 18, 63, 0) -7.14%,
+      #000000 87.01%); */
+  backgroundColor: white;
+}
 
-  .bgcamp {
-    background-color: rgb(253, 253, 253);
-  }
+.bg {
+  background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgb(81, 201, 252));
 
-  h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    font-size: 3.5rem;
-    text-align: center;
+}
 
-  }
+.bg-slide {
+  border-radius: 10px;
+}
 
-  input[type="date"]::-webkit-calendar-picker-indicator {
-    cursor: pointer;
-    filter: invert(0.8);
-  }
+.sidebar {
+  background: linear-gradient(#af79fb, #f7f5f8, #8ed1f9);
+  border: 1px solid black;
+}
 
-  .campaign-border {
-    border: 1.5px solid rgb(239, 228, 228);
-  }
+.background {
+  background-color: white;
+}
 
-  .campaign-in {
-    border-top: 1px solid rgb(253, 251, 251);
-  }
+.bgcamp {
+  background: #ffffff;
+}
+
+.fund-border {
+  border: 2px solid black;
+}
+
+h1 {
+  font-family: 'BrunoAce', 'Montserrat', 'Ubuntu';
+  font-weight: 900;
+  font-size: 3.5rem;
+  text-align: center;
+  color: rgb(19, 18, 18);
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #fffdfd, 1px 1px 0 #ffffff;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(0.8);
+}
+
+.campaign-border {
+  border: 1.6px solid rgb(15, 15, 15);
+}
+
+.campaign-in {
+  border-top: 1px solid rgb(253, 251, 251);
+}
 
 
-  /* Button */
-  h1 {
-    text-align: center;
-  }
+/* Button */
+h1 {
+  text-align: center;
+}
 
-  /* body {
-  padding: 2rem;
-  background-color: aquamarine;
+/* body {
+padding: 2rem;
+background-color: aquamarine;
 } */
 
-  button {
-    margin: 15rem 0;
-    padding: 1.5rem 2.5rem;
-    width: 250px;
-    height: auto;
-    cursor: pointer;
-  }
-
-  img {
-    width: 120px;
-  }
-
-  /* .lb2 {
-
+button {
   margin: 15rem 0;
   padding: 1.5rem 2.5rem;
   width: 250px;
   height: auto;
   cursor: pointer;
+}
+
+img {
+  width: 120px;
+}
+
+.lb1 {
+
   background-color: white;
-  margin-left: 350px;
-} */
+  margin-left: 300px;
+}
 
-  .lb1 {
+.b1 {
+  margin-left: 100px;
+}
 
-    background-color: white;
-    margin-left: 300px;
-  }
+.b2 {
+  margin-left: 500px;
+  margin-bottom: auto;
+}
 
-  .b1 {
-    margin-left: 100px;
-  }
-
-  .b2 {
-    margin-left: 500px;
-    margin-bottom: auto;
-  }
-
-  .login {
-    display: flex;
-  }
+.login {
+  display: flex;
+}

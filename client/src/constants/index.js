@@ -1,7 +1,6 @@
 import {
   dashboard,
   logout1,
-  payment,
   profile,
   withdraw,
   createCampaign,
@@ -12,33 +11,18 @@ export const navlinks = [
     name: "dashboard",
     imgUrl: dashboard,
     link: "/",
+    title: "Dashboard",
   },
   {
     name: "campaign",
     imgUrl: createCampaign,
     link: "/create-campaign",
-  },
-  {
-    name: "payment",
-    imgUrl: payment,
-    link: "/",
-    disabled: true,
-  },
-  {
-    name: "withdraw",
-    imgUrl: withdraw,
-    link: "/",
-    disabled: true,
+    title: "Add Idea",
   },
   {
     name: "profile",
     imgUrl: profile,
     link: "/profile",
-  },
-  {
-    name: "logout",
-    imgUrl: logout1,
-    link: "/auth",
-    disabled: true,
+    title: "Idea Created",
   },
 ];
